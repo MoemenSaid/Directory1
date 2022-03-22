@@ -1,0 +1,75 @@
+:root{
+    --backColor:#13162b;
+    --backTextColor:#03061d;
+    --textColor:#686d88;
+}
+
+::-webkit-scrollbar-track {
+    background:#fff;
+}
+::-webkit-scrollbar-thumb {
+    background: var(--textColor);
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--backTextColor);
+}
+
+::placeholder{
+    color: #cdcdd1;
+}
+body{
+    background:var(--backColor);
+}
+.searchContainer form{
+    box-shadow: 0px 7px 6px -6px #000;
+    border-color: var(--textColor);
+    
+}
+.searchContainer input{
+    background-color: var(--backTextColor);
+    color: #fff;
+}
+.searchContainer button{ 
+    background-color: var(--backTextColor);
+}
+.searchContainer button{
+    border-color: var(--textColor);
+}
+
+.themeDiv{
+    background: var(--backTextColor);
+}
+.themeSelection{
+    background-color: var(--backTextColor);
+}
+/*
+.dropdown-menu{
+    box-shadow: 0px 0px 10px #000;
+}
+.dropdown-item{
+    color: #000;
+}
+.dropdown-item:hover{
+    background-color: #292e56;
+    color: #fff;
+}
+.activeDropdown{
+    background-color: #13162b;
+    color:#fff;
+}
+.activeDropdown:hover{
+    background-color: #13162b;
+    color: #fff;
+}
+*/
+.medContainer{
+    border-color:var(--backTextColor);;
+}
+.medContainer:hover{
+    box-shadow: 0px 9px 20px -8px #000;
+}
+.bigContainer div h1{
+    color: var(--textColor);
+    text-shadow: 0 0 5px #000;
+    background-color: var(--backTextColor);;
+}

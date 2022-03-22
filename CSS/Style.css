@@ -1,0 +1,300 @@
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #fff;
+    border-radius: 5px;
+    margin: 2px
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 5px;
+    margin: 2px
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+* {
+    margin: 0px;
+    outline: none;
+    transition: all .2s ease-in-out;
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: center;
+    margin: 50px auto;
+}
+
+.searchContainer form {
+    margin-top: -100px;
+    opacity: 0;
+    display: flex;
+    border-radius: 5px;
+    border: 2px solid;
+    overflow: hidden;
+}
+
+.searchContainer input {
+    width: 600px;
+    padding: 7px;
+    padding-left: 15px;
+    font-size: 20px;
+    border: none;
+}
+
+.searchContainer button {
+    font-size: 20px;
+    font-weight: 600;
+    border: none;
+    border-left: 2px solid;
+    transition: all .2s ease-in-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 15px;
+    flex-flow: column;
+    width: 50%;
+    outline: none;
+}
+.searchContainer button:active{
+    background-color: #000;
+}
+
+.searchContainer button h6 {
+    color: #fff;
+    margin: 0;
+    font-size: 14px;
+}
+
+.searchContainer .dropdown-toggle {
+    border-left: none;
+    padding: 7px 5px;
+}
+
+.searchContainer .dropdown-toggle:focus {
+    outline: none;
+}
+
+.themeDiv {
+    width: 70px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    top: 100px;
+    border-bottom-right-radius: 10px;
+    margin-left: -135px;
+    border: 2px solid #fff;
+    border-left: none;
+}
+
+.ColorsDiv {
+    overflow-y: auto;
+    overflow-x: hidden;
+    margin-top: -40px;
+    margin-right: 4px;
+    max-height: 280px;
+}
+
+.themeSelection {
+    width: 50px;
+    height: 50px;
+    margin-left: 68px;
+    margin-top: -2px;
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0 10px 10px 0;
+    cursor: pointer;
+    border: 2px solid #fff;
+    border-left: none;
+    box-shadow: 10px 6px 15px -5px #000;
+}
+
+.themeSelection img {
+    width: 40px;
+    height: 40px;
+}
+
+.bluredDiv {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    display: none;
+    background: rgba(0, 0, 0, .95);
+}
+.Color{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    box-shadow: 0px 5px 10px #000;
+    cursor: pointer;
+    margin:10px 4px;
+}
+.darkBlue {
+    background-color: #13162b;
+    margin: 0px 4px;
+}
+
+.yellow {
+    background-color: #ffd000;
+}
+
+.grey {
+    background-color: #f1f1f1;
+}
+
+.red {
+    background-color: #FFC0CB;
+}
+
+.blue {
+    background-color: #63b8f9;
+}
+
+.gradient{
+background:linear-gradient(43.66deg,#f1815f -15%,#6845a0 49%,#f1815f 157%);
+}
+
+.dropdown-menu {
+    transition: 0s;
+    min-width: 100px;
+    width: 135px;
+    animation-duration: 200ms!important;
+}
+
+.dropdown-item {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.dropdown-item img {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.searchContainer button img {
+    height: 20px;
+    margin-right: 3px;
+}
+
+.row {
+    margin: 0px!important;
+    justify-content: space-evenly;
+}
+
+.directRow {
+    position: absolute;
+    top: 150px;
+    opacity: 0;
+}
+
+.bigContainer {
+    padding: 10px;
+}
+
+.medContainer {
+    border-radius: 0 0 5px 5px;
+    min-height: 60px;
+    transition: all .2s ease-in-out;
+    border: 1px solid;
+}
+
+.medContainer:hover {
+    transform: scale(1.01);
+}
+
+.bigContainer div h1 {
+    width: 100%;
+    text-align: center;
+    font-family: germania;
+    cursor: default;
+    font-size: 30px;
+    height: 35px;
+    line-height: 32px;
+}
+
+.smallContainer {
+    border: none!important;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 7px 10px;
+}
+
+.link {
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.link img {
+    width: 40px;
+}
+
+.design img {
+    margin: 2px 5px;
+}
+
+@media(max-width:782px) {
+    .themeSelection{
+        width: 40px;
+        height: 40px;
+    }
+    .themeSelection img{
+        width: 30px;
+        height: 30px;
+    }
+    .searchContainer {
+        margin: 20px auto;
+    }
+    form {
+        width: 100% !important;
+        ;
+    }
+    .searchContainer input {
+        width: 70%;
+        padding: 5px;
+    }
+    .btn-group {
+        width: 30%;
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .searchBtn {
+        width: 80%;
+    }
+    .dropdown-toggle {
+        width: 20%;
+    }
+    .directRow {
+        top: 75px;
+    }
+}
+
+@keyframes logoRedirect {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@font-face {
+    font-family: 'germania';
+    src: url('../Fonts/germaniaone-regular-webfont.woff2') format('woff2'), url('../Fonts/germaniaone-regular-webfont.woff2') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
